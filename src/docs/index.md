@@ -1,8 +1,12 @@
-# Welcome to MkDocs
+# Портфолио Ахметова Артёма
 
-Але делай
+504980 P3122
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Навигация:  
+ - [Обо мне](/about)  
+ - [Лабораторные](/labs)  
+
+<!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 
@@ -16,4 +20,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        ...       # Other markdown pages, images and other files. -->

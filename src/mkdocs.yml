@@ -1,5 +1,7 @@
 site_name: Портфолио
 
+site_url: https://votemha-art.sourcecraft.site/portfolio/
+
 nav:
   - Home: index.md
   - About: about.md

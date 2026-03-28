@@ -3,8 +3,8 @@
 504980 P3122
 
 Навигация:  
- - [Обо мне](/about)  
- - [Лабораторные](/labs)  
+ - [Обо мне](about.md)  
+ - [Лабораторные](labs.md)  
 
 <!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

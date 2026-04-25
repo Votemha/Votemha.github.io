@@ -1,0 +1,284 @@
+<!doctype html>
+<html data-bs-theme="">
+    <head>
+                <title>Отчёт по лабораторной работе - Портфолио</title>
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+            <link rel="canonical" href="https://votemha-art.sourcecraft.site/portfolio/l6/">
+            
+
+            
+                <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+            
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../assets/css/root.min.css">
+            <link rel="stylesheet" href="../assets/css/main.min.css">
+            <link rel="stylesheet" href="../assets/css/media.min.css">
+            <link rel="stylesheet" href="../assets/css/mkdocstrings.min.css">
+                <script src="../search/main.js"></script>
+
+            
+                
+            
+    </head>
+
+    <body>
+        <div class="container py-3">
+            <header>
+                    <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Портфолио</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+    
+        <li class="nav-item" id="component-menu">
+            <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="..">[Home]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../about/">[About]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../labs/">[Labs]</a>
+                        </li>
+            </ul>
+        </li>
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+            </header>
+
+            <main><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
+
+                
+                        <!-- block content -->
+<section class="container post" id="component-content">
+    <article>
+        <header>
+            
+                <h1 class=" title" id="component-title">Отчёт по лабораторной работе</h1>
+            
+        </header>
+        <p><h1 id="_1">Отчёт по лабораторной работе</h1>
+<h2 id="pandas">Предобработка и анализ данных с использованием библиотеки Pandas</h2>
+<p><a href="https://colab.research.google.com/drive/1cXUR8p__N9p8v-h9PomCCYE1mh75AyNe?usp=sharing">https://colab.research.google.com/drive/1cXUR8p__N9p8v-h9PomCCYE1mh75AyNe?usp=sharing</a></p>
+<h2 id="_2">Введение</h2>
+<p>В современном анализе данных важным этапом является их предварительная обработка. Сырые данные часто содержат пропуски, ошибки и несоответствия, которые могут негативно повлиять на результаты анализа. Для решения этих задач используется библиотека pandas языка Python, предоставляющая удобные инструменты для очистки, трансформации и анализа данных.</p>
+<hr />
+<h2 id="_3">Цель работы</h2>
+<p>Освоение методов очистки и трансформации данных с использованием библиотеки pandas на примере реального набора данных Titanic.</p>
+<hr />
+<h2 id="_4">Описание набора данных</h2>
+<p>В работе использован датасет Titanic с платформы Kaggle. Данные содержат информацию о пассажирах корабля, включая:</p>
+<ul>
+<li>PassengerId — идентификатор  </li>
+<li>Survived — факт выживания  </li>
+<li>Pclass — класс билета  </li>
+<li>Name — имя пассажира  </li>
+<li>Sex — пол  </li>
+<li>Age — возраст  </li>
+<li>SibSp — количество родственников (братья/сёстры/супруги)  </li>
+<li>Parch — количество родителей/детей  </li>
+<li>Ticket — номер билета  </li>
+<li>Fare — стоимость билета  </li>
+<li>Cabin — каюта  </li>
+<li>Embarked — порт посадки  </li>
+</ul>
+<hr />
+<h2 id="_5">Первичный анализ данных</h2>
+<p>Был выполнен анализ структуры данных:</p>
+<ul>
+<li>Определены типы данных признаков  </li>
+<li>Обнаружены пропуски в столбцах Age, Cabin и Embarked  </li>
+<li>Получены статистические характеристики числовых признаков  </li>
+</ul>
+<h3 id="_6">Основные наблюдения:</h3>
+<ul>
+<li>Признак Cabin содержит большое количество пропусков  </li>
+<li>Возраст пассажиров имеет разброс и выбросы  </li>
+<li>Стоимость билета (Fare) имеет значительные отклонения  </li>
+</ul>
+<hr />
+<h2 id="_7">Визуализация данных</h2>
+<p>Построены гистограммы распределения числовых признаков и тепловая карта корреляций.</p>
+<h3 id="_8">Выводы:</h3>
+<ul>
+<li>Распределение возраста близко к нормальному  </li>
+<li>Признак Fare имеет выбросы  </li>
+<li>Обнаружены зависимости между признаками  </li>
+</ul>
+<hr />
+<h2 id="_9">Обработка пропусков</h2>
+<h3 id="age">Age</h3>
+<ul>
+<li>Среднее значение: 29.7  </li>
+<li>Медиана: 28  </li>
+</ul>
+<p>Пропуски заполнены медианой, так как она устойчива к выбросам.</p>
+<h3 id="embarked">Embarked</h3>
+<p>Пропуски заполнены наиболее частым значением (модой).</p>
+<h3 id="cabin">Cabin</h3>
+<p>Из признака извлечена первая буква, обозначающая палубу.</p>
+<hr />
+<h2 id="_10">Трансформация данных</h2>
+<p>Были выполнены следующие преобразования:</p>
+<ul>
+<li>Признак Pclass преобразован в категориальный (F, S, T)  </li>
+<li>Из имени выделен новый признак Title  </li>
+<li>Пол преобразован в числовой формат (0 — мужской, 1 — женский)  </li>
+<li>Создан признак FamilySize (размер семьи)  </li>
+<li>Создан бинарный признак IsAlone  </li>
+</ul>
+<hr />
+<h2 id="_11">Обработка выбросов</h2>
+<p>Для признака Fare:
+- Построен boxplot<br />
+- Выбросы определены методом IQR<br />
+- Применена winsorization (ограничение значений 95-м перцентилем)  </p>
+<p>Для возраста:
+- Построено распределение  </p>
+<hr />
+<h2 id="_12">Агрегация и анализ</h2>
+<p>Были рассчитаны агрегированные показатели:</p>
+<ul>
+<li>Средняя выживаемость по классам  </li>
+<li>Группировка по классу и полу  </li>
+<li>Медианный возраст по портам посадки  </li>
+</ul>
+<h3 id="_13">Основные выводы:</h3>
+<ul>
+<li>Пассажиры 1 класса выживали чаще  </li>
+<li>Женщины имели значительно более высокий шанс выживания  </li>
+<li>Пассажиры, путешествующие в одиночку, выживали реже  </li>
+</ul>
+<hr />
+<h2 id="_14">Корреляционный анализ</h2>
+<p>Построена матрица корреляций.</p>
+<h3 id="_15">Основные зависимости:</h3>
+<ul>
+<li>Пол имеет сильную корреляцию с выживаемостью  </li>
+<li>Стоимость билета положительно связана с выживанием  </li>
+<li>Размер семьи сильно коррелирует с SibSp и Parch  </li>
+<li>Признак IsAlone обратно коррелирует с FamilySize  </li>
+</ul>
+<p>Следует учитывать, что корреляция не означает причинно-следственную связь.</p>
+<hr />
+<h2 id="_16">Метрики качества обработки</h2>
+<ul>
+<li>Процент заполненных данных: 87.5%  </li>
+<li>Уменьшено количество пропусков  </li>
+<li>Созданы новые информативные признаки  </li>
+</ul>
+<hr />
+<h2 id="_17">Заключение</h2>
+<p>В ходе работы были изучены методы предобработки данных с использованием библиотеки pandas. Были выполнены очистка данных, обработка пропусков, преобразование признаков и анализ зависимостей.</p>
+<p>Полученные данные были подготовлены для дальнейшего анализа и построения моделей машинного обучения. Выявлены ключевые факторы, влияющие на выживаемость пассажиров, такие как пол, класс билета и размер семьи.</p>
+<hr />
+<h2 id="_18">Выводы</h2>
+<ol>
+<li>Данные требуют предварительной очистки перед анализом  </li>
+<li>Заполнение пропусков медианой является эффективным методом  </li>
+<li>Создание новых признаков повышает информативность данных  </li>
+<li>Наибольшее влияние на выживаемость оказывают пол и класс билета  </li>
+<li>Pandas является удобным инструментом для анализа данных  </li>
+</ol>
+<hr /></p>
+    </article>
+</section>
+<!-- endblock -->
+                
+                
+            </main>
+
+            
+                    <!-- block preview -->
+<!-- endblock -->
+            
+
+            
+                    <!-- block footer -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
+    <div class="row">
+        <div class="col-12 col-md">
+                <!-- block copyright -->
+
+    <small class="d-block mb-3">
+        Made with
+        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
+            Simple Blog for MkDocs
+        </a>
+    </small>
+
+<!-- endblock -->
+        </div>
+    </div>
+</footer>
+<!-- endblock -->
+            
+        </div>
+
+            <script>var base_url = '..';</script>
+            <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+            <script src="../assets/js/bootstrap.bundle.min.js""></script>
+            <script src="../assets/js/main.min.js""></script>
+                <script src="../search/main.js" defer></script>
+
+    </body>
+
+</html>
